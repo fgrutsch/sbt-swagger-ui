@@ -2,7 +2,7 @@ import com.fgrutsch.sbt.swaggerui.SwaggerUiConfig
 
 lazy val root = project
   .in(file("."))
-  .enablePlugins(ParadoxSitePlugin, SwaggerUiPlugin)
+  .enablePlugins(SitePlugin, SwaggerUiPlugin)
   .settings(
     organization := "com.fgrutsch",
     name         := "sbt-swagger-ui-test-sbt-site-example",
