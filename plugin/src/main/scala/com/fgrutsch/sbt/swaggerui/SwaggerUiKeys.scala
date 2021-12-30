@@ -19,8 +19,9 @@ package com.fgrutsch.sbt.swaggerui
 import sbt._
 
 trait SwaggerUiKeys {
-  val swaggerUiVersion: SettingKey[String]         = settingKey("swagger-ui-dist version")
-  val swaggerUiDirectory: SettingKey[File]         = settingKey("directory to where swagger-ui-dist files get copied")
-  val swaggerUiConfig: SettingKey[SwaggerUiConfig] = settingKey("swagger-ui configuration (https://bit.ly/328ZlXk)")
-  val swaggerUiGenerate: TaskKey[Unit]             = taskKey("generate swagger-ui bundle")
+  val swaggerUiVersion: SettingKey[String] = settingKey("swagger-ui-dist version")
+  val swaggerUiDirectory: SettingKey[File] = settingKey("directory to where swagger-ui-dist files get copied")
+  val swaggerUiConfig: SettingKey[SwaggerUiConfig] = settingKey(
+    "swagger-ui configuration (https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/)")
+  val swaggerUiGenerate: TaskKey[Unit] = taskKey("generate swagger-ui site")
 }
