@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 sbt-swagger-ui contributors
+ * Copyright 2022 sbt-swagger-ui contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

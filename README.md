@@ -1,3 +1,7 @@
+[![Maven](https://maven-badges.herokuapp.com/maven-central/com.fgrutsch/sbt-swagger-ui/badge.png?style=for-the-badge)](https://search.maven.org/search?q=g:%22com.fgrutsch%22%20AND%20a:%22sbt-swagger-ui%22)
+[![Github Actions CI Workflow](https://img.shields.io/github/workflow/status/fgrutsch/sbt-swagger-ui/Continuous%20Integration/main?logo=Github&style=for-the-badge)](https://github.com/fgrutsch/sbt-swagger-ui/actions/workflows/ci.yml?query=branch%3Amain)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
+
 # sbt-swagger-ui
 
 SBT plugin that generates a swagger-ui site for static website hosting.

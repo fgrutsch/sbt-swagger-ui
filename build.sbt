@@ -1,3 +1,5 @@
+import java.time.LocalDate
+
 ThisBuild / scalafixDependencies += Dependencies.organizeimports
 ThisBuild / scalaVersion := "2.12.15"
 
@@ -33,7 +35,7 @@ lazy val commonSettings = Seq(
     "-Ywarn-dead-code",
     "-Ywarn-unused"
   ),
-  headerLicense     := Some(HeaderLicense.ALv2("2021", "sbt-swagger-ui contributors")),
+  headerLicense     := Some(HeaderLicense.ALv2(LocalDate.now.getYear.toString, "sbt-swagger-ui contributors")),
   semanticdbEnabled := true,
   semanticdbVersion := scalafixSemanticdb.revision
 )
