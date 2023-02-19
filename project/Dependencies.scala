@@ -3,7 +3,7 @@ import sbt._
 object Dependencies {
 
   val plugin: Seq[ModuleID] = Seq(
-    "org.jsoup"      % "jsoup"     % "1.15.3",
+    "org.jsoup"      % "jsoup"     % "1.15.4",
     "org.scalatest" %% "scalatest" % "3.2.14" % Test
   )
 
