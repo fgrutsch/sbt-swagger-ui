@@ -3,8 +3,8 @@ import sbt._
 object Dependencies {
 
   val plugin: Seq[ModuleID] = Seq(
-    "org.jsoup"      % "jsoup"     % "1.15.3",
-    "org.scalatest" %% "scalatest" % "3.2.14" % Test
+    "org.jsoup"      % "jsoup"     % "1.15.4",
+    "org.scalatest" %% "scalatest" % "3.2.15" % Test
   )
 
   val organizeimports: ModuleID = "com.github.liancheng" %% "organize-imports" % "0.6.0"
