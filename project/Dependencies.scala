@@ -8,6 +8,6 @@ object Dependencies {
   )
 
   val organizeimports: ModuleID = "com.github.liancheng" %% "organize-imports" % "0.6.0"
-  val sbtWebPlugin: ModuleID    = "com.github.sbt"        % "sbt-web"          % "1.5.1"
+  val sbtWebPlugin: ModuleID    = "com.github.sbt"        % "sbt-web"          % "1.5.2"
 
 }
