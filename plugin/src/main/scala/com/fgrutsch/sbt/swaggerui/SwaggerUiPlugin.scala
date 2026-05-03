@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 sbt-swagger-ui contributors
+ * Copyright 2026 sbt-swagger-ui contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,10 +35,10 @@ object SwaggerUiPlugin extends AutoPlugin {
   import autoImport._
 
   override lazy val projectSettings = Seq(
-    swaggerUiVersion   := "4.1.3",
+    swaggerUiVersion   := "5.31.2",
     swaggerUiDirectory := (Compile / target).value / "sbt-swagger-ui",
     swaggerUiConfig    := SwaggerUiConfig.Defaults,
-    swaggerUiGenerate := {
+    swaggerUiGenerate  := {
       // use TestAssets because for some reason swagger-ui-dist webjar is not in mappings when used together with
       // https://www.scala-sbt.org/sbt-site/generators/paradox.html
       val swaggerUiWebjarDir = (TestAssets / assets / mappings).value
@@ -47,7 +47,7 @@ object SwaggerUiPlugin extends AutoPlugin {
         }
         .getOrElse(throw new IllegalStateException("Expected swagger-ui-dist webjar to be present on classpath."))
 
-      val filter = "*.html" | "*.css" | "*.js" | "*.png"
+      val filter            = "*.html" | "*.css" | "*.js" | "*.png"
       val swaggerUiMappings = IO.listFiles(swaggerUiWebjarDir, filter).toSeq.map { f =>
         f -> swaggerUiDirectory.value / f.getName
       }

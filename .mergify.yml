@@ -3,8 +3,7 @@ pull_request_rules:
     conditions:
       - "author=fgrutsch"
       - "head~=^update\/.+$"
-      - 'status-success~=Build and Test \(ubuntu-latest, 2\.\d{1,2}\.\d{1,2}, temurin@11\)'
-      - 'status-success~=Build and Test \(ubuntu-latest, 2\.\d{1,2}\.\d{1,2}, temurin@17\)'
+      - 'status-success~=Build and Test \(ubuntu-latest, 2\.\d{1,2}\.\d{1,2}, temurin@21\)'
     actions:
       merge:
         method: squash

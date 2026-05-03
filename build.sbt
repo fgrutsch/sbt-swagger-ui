@@ -1,20 +1,16 @@
 import java.time.LocalDate
 
-ThisBuild / scalafixDependencies += Dependencies.organizeimports
-ThisBuild / scalaVersion := "2.12.17"
+ThisBuild / scalaVersion := "2.12.21"
 
 addCommandAlias("codeFmt", ";headerCreate;scalafmtAll;scalafmtSbt;scalafixAll")
 addCommandAlias("codeVerify", ";scalafmtCheckAll;scalafmtSbtCheck;scalafixAll --check;headerCheck")
 
 lazy val commonSettings = Seq(
-  organization           := "com.fgrutsch",
-  sonatypeCredentialHost := "s01.oss.sonatype.org",
-  sonatypeRepository     := "https://s01.oss.sonatype.org/service/local",
-  sonatypeProfileName    := "com.fgrutsch",
-  startYear              := Some(2021),
-  homepage               := Some(url("https://github.com/fgrutsch/sbt-swagger-ui")),
-  licenses               := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
-  scmInfo := Some(
+  organization := "com.fgrutsch",
+  startYear    := Some(2021),
+  homepage     := Some(url("https://github.com/fgrutsch/sbt-swagger-ui")),
+  licenses     := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
+  scmInfo      := Some(
     ScmInfo(homepage.value.get, "scm:git:https://github.com/fgrutsch/sbt-swagger-ui.git")
   ),
   developers += Developer(

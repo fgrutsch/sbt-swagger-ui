@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 sbt-swagger-ui contributors
+ * Copyright 2026 sbt-swagger-ui contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -80,13 +80,13 @@ final case class SwaggerUiConfig(
     }
 
     val urlsJsKeyValues = urls match {
-      case Nil => ""
+      case Nil    => ""
       case values =>
         val keyValueObjects = values.map {
           case u: SwaggerUiConfig.Url.Remote => s"{url: '${u.value}', name: '${u.name}'}"
           case u: SwaggerUiConfig.Url.File   => s"{url: '${u.value.getName}', name: '${u.name}'}"
         }
-        s"urls: [${keyValueObjects.mkString(", ")}],",
+        s"urls: [${keyValueObjects.mkString(", ")}],"
     }
 
     val urlsPrimaryNameJsKeyValues = urlsPrimaryName match {

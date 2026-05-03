@@ -83,12 +83,12 @@ For example you could link to the swagger-ui site like this:
 
 ## Settings and Tasks
 
-| Name               | Type    | Description                                                                                          | Default Value                                           |
-|--------------------|---------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| swaggerUiVersion   | Setting | The WebJar swagger-ui-dist version to use                                                            | `4.1.3`                                                 |
-| swaggerUiDirectory | Setting | Directory to where swagger-ui-dist files get copied                                                  | `(Compile / target).value / "sbt-swagger-ui"`           |
-| swaggerUiConfig    | Setting | swagger-ui configuration (https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/) | `com.fgrutsch.sbt.swaggerui.SwaggerUiConfig.Defaults`   |
-| swaggerUiGenerate  | Task    | generate swagger-ui site                                                                             | `-`                                                     |
+| Name               | Type    | Description                                                                                          | Default Value                                         |
+|--------------------|---------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| swaggerUiVersion   | Setting | The WebJar swagger-ui-dist version to use                                                            | `5.31.2`                                              |
+| swaggerUiDirectory | Setting | Directory to where swagger-ui-dist files get copied                                                  | `(Compile / target).value / "sbt-swagger-ui"`         |
+| swaggerUiConfig    | Setting | swagger-ui configuration (https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/) | `com.fgrutsch.sbt.swaggerui.SwaggerUiConfig.Defaults` |
+| swaggerUiGenerate  | Task    | generate swagger-ui site                                                                             | `-`                                                   |
 
 ## Contributors
 

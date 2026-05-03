@@ -6,7 +6,7 @@ lazy val root = project
   .settings(
     organization := "com.fgrutsch",
     name         := "sbt-swagger-ui-test-simple",
-    scalaVersion := "2.13.7"
+    scalaVersion := "2.13.18"
   )
   .settings(
     swaggerUiDirectory := (Compile / target).value / "swagger-ui-test",
