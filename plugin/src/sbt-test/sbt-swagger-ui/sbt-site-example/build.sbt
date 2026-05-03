@@ -6,7 +6,7 @@ lazy val root = project
   .settings(
     organization := "com.fgrutsch",
     name         := "sbt-swagger-ui-test-sbt-site-example",
-    scalaVersion := "2.13.7"
+    scalaVersion := "2.13.18"
   )
   .settings(
     swaggerUiConfig := swaggerUiConfig.value.addUrls(

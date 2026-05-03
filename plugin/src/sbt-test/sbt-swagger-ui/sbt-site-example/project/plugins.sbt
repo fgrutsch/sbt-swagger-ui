@@ -1,4 +1,4 @@
-addSbtPlugin("com.typesafe.sbt" % "sbt-site" % "1.4.1")
+addSbtPlugin("com.github.sbt" % "sbt-site" % "1.7.0")
 
 sys.props.get("plugin.version") match {
   case Some(x) => addSbtPlugin("com.fgrutsch" % "sbt-swagger-ui" % x)
