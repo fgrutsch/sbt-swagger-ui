@@ -1,10 +1,10 @@
-import com.fgrutsch.sbt.swaggerui.SwaggerUiConfig
+import _root_.io.github.fgrutsch.sbt.swaggerui.SwaggerUiConfig
 
 lazy val root = project
   .in(file("."))
   .enablePlugins(SitePlugin, SwaggerUiPlugin)
   .settings(
-    organization := "com.fgrutsch",
+    organization := "io.github.fgrutsch",
     name         := "sbt-swagger-ui-test-sbt-site-example",
     scalaVersion := "2.13.18"
   )

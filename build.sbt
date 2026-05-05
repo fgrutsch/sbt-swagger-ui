@@ -6,7 +6,7 @@ addCommandAlias("codeFmt", ";headerCreate;scalafmtAll;scalafmtSbt;scalafixAll")
 addCommandAlias("codeVerify", ";scalafmtCheckAll;scalafmtSbtCheck;scalafixAll --check;headerCheck")
 
 lazy val commonSettings = Seq(
-  organization := "com.fgrutsch",
+  organization := "io.github.fgrutsch",
   startYear    := Some(2021),
   homepage     := Some(url("https://github.com/fgrutsch/sbt-swagger-ui")),
   licenses     := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),

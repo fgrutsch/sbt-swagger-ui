@@ -1,4 +1,4 @@
-[![Maven](https://maven-badges.herokuapp.com/maven-central/com.fgrutsch/sbt-swagger-ui/badge.png?style=for-the-badge)](https://search.maven.org/search?q=g:%22com.fgrutsch%22%20AND%20a:%22sbt-swagger-ui%22)
+[![Maven](https://img.shields.io/maven-central/v/io.github.fgrutsch/sbt-swagger-ui?logo=Apache%20Maven&style=for-the-badge)](https://search.maven.org/search?q=g:io.github.fgrutsch%20AND%20a:sbt-swagger-ui)
 [![Github Actions CI Workflow](https://img.shields.io/github/actions/workflow/status/fgrutsch/sbt-swagger-ui/ci.yml?logo=Github&style=for-the-badge)](https://github.com/fgrutsch/sbt-swagger-ui/actions/workflows/ci.yml?query=branch%3Amain)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
@@ -11,13 +11,13 @@ SBT plugin that generates a swagger-ui site for static website hosting.
 Add the following to your `project/plugins.sbt`:
 
 ```scala
-addSbtPlugin("com.fgrutsch" % "sbt-swagger-ui" % "x.x.x")
+addSbtPlugin("io.github.fgrutsch" % "sbt-swagger-ui" % "x.x.x")
 ```
 
 After that you just need to enable the plugin on your SBT project and configure the OpenAPIs you want to serve:
 
 ```scala
-import com.fgrutsch.sbt.swaggerui.SwaggerUiConfig
+import io.github.fgrutsch.sbt.swaggerui.SwaggerUiConfig
 
 lazy val docs = project
   .in(file("docs"))
@@ -38,7 +38,7 @@ lazy val docs = project
 
 This would add two OpenAPIs to the swagger-ui site, one that is served from a local file (`Petstore API`) and one from a remote location (`Github API`).
 
-Check `com.fgrutsch.sbt.swaggerui.SwaggerUiConfig` for a full set of configuration values.
+Check `io.github.fgrutsch.sbt.swaggerui.SwaggerUiConfig` for a full set of configuration values.
 
 To generate the swagger-ui site you just need to run `sbt docs/swaggerUiGenerate` and check the output in the directory you configured (`swaggerUiDirectory`).
 
@@ -47,7 +47,7 @@ To generate the swagger-ui site you just need to run `sbt docs/swaggerUiGenerate
 You might already use [sbt-site](https://github.com/sbt/sbt-site) to generate a static documentation website. You can easily integrate `sbt-swagger-ui` by mapping the output of sbt-swagger-ui to sbt-site's directory:
 
 ```scala
-import com.fgrutsch.sbt.swaggerui.SwaggerUiConfig
+import io.github.fgrutsch.sbt.swaggerui.SwaggerUiConfig
 
 lazy val docs = project
   .in(file("docs"))
@@ -83,12 +83,12 @@ For example you could link to the swagger-ui site like this:
 
 ## Settings and Tasks
 
-| Name               | Type    | Description                                                                                          | Default Value                                         |
-|--------------------|---------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| swaggerUiVersion   | Setting | The WebJar swagger-ui-dist version to use                                                            | `5.31.2`                                              |
-| swaggerUiDirectory | Setting | Directory to where swagger-ui-dist files get copied                                                  | `(Compile / target).value / "sbt-swagger-ui"`         |
-| swaggerUiConfig    | Setting | swagger-ui configuration (https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/) | `com.fgrutsch.sbt.swaggerui.SwaggerUiConfig.Defaults` |
-| swaggerUiGenerate  | Task    | generate swagger-ui site                                                                             | `-`                                                   |
+| Name               | Type    | Description                                                                                          | Default Value                                               |
+|--------------------|---------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| swaggerUiVersion   | Setting | The WebJar swagger-ui-dist version to use                                                            | `5.31.2`                                                    |
+| swaggerUiDirectory | Setting | Directory to where swagger-ui-dist files get copied                                                  | `(Compile / target).value / "sbt-swagger-ui"`               |
+| swaggerUiConfig    | Setting | swagger-ui configuration (https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/) | `io.github.fgrutsch.sbt.swaggerui.SwaggerUiConfig.Defaults` |
+| swaggerUiGenerate  | Task    | generate swagger-ui site                                                                             | `-`                                                         |
 
 ## Contributors
 

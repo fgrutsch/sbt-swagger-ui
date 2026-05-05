@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.fgrutsch.sbt.swaggerui
+package io.github.fgrutsch.sbt.swaggerui
 
 import com.typesafe.sbt.web.Import.WebKeys._
 import com.typesafe.sbt.web.Import._
