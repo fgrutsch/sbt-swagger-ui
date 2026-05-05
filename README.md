@@ -1,4 +1,4 @@
-[![Maven](https://img.shields.io/maven-central/v/io.github.fgrutsch/sbt-swagger-ui?logo=Apache%20Maven&style=for-the-badge)](https://search.maven.org/search?q=g:io.github.fgrutsch%20AND%20a:sbt-swagger-ui)
+[![Maven](https://img.shields.io/maven-central/v/io.github.fgrutsch/sbt-swagger-ui_2.12_1.0?logo=Apache%20Maven&style=for-the-badge)](https://search.maven.org/search?q=g:io.github.fgrutsch%20AND%20a:sbt-swagger-ui_2.12_1.0)
 [![Github Actions CI Workflow](https://img.shields.io/github/actions/workflow/status/fgrutsch/sbt-swagger-ui/ci.yml?logo=Github&style=for-the-badge)](https://github.com/fgrutsch/sbt-swagger-ui/actions/workflows/ci.yml?query=branch%3Amain)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
