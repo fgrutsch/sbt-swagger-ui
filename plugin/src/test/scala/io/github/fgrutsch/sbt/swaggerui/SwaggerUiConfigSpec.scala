@@ -1,4 +1,4 @@
-package com.fgrutsch.sbt.swaggerui
+package io.github.fgrutsch.sbt.swaggerui
 
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.must.Matchers
