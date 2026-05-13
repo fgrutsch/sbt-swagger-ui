@@ -10,7 +10,7 @@ lazy val root = project
   )
   .settings(
     swaggerUiDirectory := (Compile / target).value / "swagger-ui-test",
-    swaggerUiConfig := SwaggerUiConfig.Defaults
+    swaggerUiConfig    := SwaggerUiConfig.Defaults
       .addUrls(
         SwaggerUiConfig.Url.File("PetstoreApi", baseDirectory.value / "docs" / "api" / "petstore.json")
       )
