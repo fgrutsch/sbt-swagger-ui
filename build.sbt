@@ -1,6 +1,6 @@
 import java.time.LocalDate
 
-ThisBuild / scalaVersion := "2.12.21"
+ThisBuild / scalaVersion := "2.13.18"
 
 addCommandAlias("codeFmt", ";headerCreate;scalafmtAll;scalafmtSbt;scalafixAll")
 addCommandAlias("codeVerify", ";scalafmtCheckAll;scalafmtSbtCheck;scalafixAll --check;headerCheck")
